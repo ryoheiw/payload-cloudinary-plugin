@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/finkinfridom/payload-cloudinary-plugin.git",
+  "repository": "https://github.com/ryoheiw/payload-cloudinary-plugin-local.git",
   "author": "a.maghini@gmail.com",
   "license": "MIT",
   "files": [
