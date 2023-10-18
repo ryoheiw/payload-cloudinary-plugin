@@ -119,7 +119,11 @@ const cloudinaryPlugin = (pluginConfig?: PluginConfig) => {
     const config: Config = {
       ...incomingConfig,
       collections: (incomingConfig.collections || []).map((collection) => {
-        if (!collection.upload || !collection.upload.disableLocalStorage) {
+        if (
+          !collection.upload ||
+          (typeof collection.upload !== "boolean" &&
+            !collection.upload.disableLocalStorage)
+        ) {
           return collection;
         }
         return {
